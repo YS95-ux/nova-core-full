@@ -27,10 +27,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload static site
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./  # أو المسار إلى ملفات الموقع إذا مختلف
+          path: ./  # إذا كانت ملفاتك في مجلد مختلف، غيّره هنا
 
       - name: Deploy to GitHub Pages
         id: deployment
